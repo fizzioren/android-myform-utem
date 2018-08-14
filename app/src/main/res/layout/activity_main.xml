@@ -4,50 +4,60 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/holo_blue_light"
+    android:background="@android:color/darker_gray"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <EditText
+        android:id="@+id/main_nameEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter your name" />
 
     <EditText
+        android:id="@+id/main_emailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter your email" />
+        android:hint="Enter your email"
+        android:inputType="textWebEmailAddress" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
+            android:id="@+id/main_phoneEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="phone" />
+            android:hint="phone"
+            android:inputType="phone" />
 
         <EditText
+            android:id="@+id/main_cellEditText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="cellphone" />
+            android:hint="cellphone"
+            android:inputType="phone" />
     </LinearLayout>
 
 
     <EditText
+        android:id="@+id/main_messageEditText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:hint="Message" />
+        android:hint="Message"
+        android:inputType="textCapSentences|textAutoCorrect" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
-        android:hint="Send" />
+        android:hint="Send"
+        android:onClick="buttonPressed" />
 
 
 </LinearLayout>
