@@ -42,6 +42,19 @@
             android:inputType="phone" />
     </LinearLayout>
 
+<Spinner
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner">
+</Spinner>
+
+<AutoCompleteTextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/autocomplete">
+
+
+</AutoCompleteTextView>
 
     <EditText
         android:id="@+id/main_messageEditText"
